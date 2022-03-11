@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title></title>
+  
+</head>
+
+
+<body>
+  <style>
+    body {
+      min-height: 100vh;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      background: white;
+      background: url(./ocean-nawpic-23.jpg);
+      background-size: cover;
+    }
+
+    .turt {
+      position: relative;
+      --x: 10px;
+      --y: 10px;
+      --rotateX: 0;
+      --rotate: 0;
+      transform: translateX(var(--x)) translateY(var(--y)) rotateY(var(--rotateX)) rotate(var(--rotate));
+      transition: transform 0.2s;
+    }
+  </style>
+  <img width="200" src="./turtle.png" alt="Turt" class="turt">
+
+  <script src="./turtle.js"></script>
+</body>
+
+</html>
